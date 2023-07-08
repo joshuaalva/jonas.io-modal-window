@@ -8,8 +8,11 @@ const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 console.log(btnsOpenModal);
 
-for (let i = 0; i < btnsOpenModal.length; i++)
-  console.log(btnsOpenModal[i].textContent);
+for (let i = 0; i < btnsOpenModal.length; i++) {
+  btnsOpenModal[i].addEventListener(`click`, function () {
+    console.log(`Button clicked`);
+  });
+}
 // this is now an element
 // multiple elements with the same class
 // one line of code doesn't need the curly braces
