@@ -6,11 +6,14 @@ const btnCloseModal = document.querySelector('.close-modal');
 // so when you use query selector that has multiple selections only the first one is selected... if that makes sense
 // show-modal has 3 buttons only the first one is selected using '.show-modal'
 const btnsOpenModal = document.querySelectorAll('.show-modal');
-console.log(btnsOpenModal);
+// console.log(btnsOpenModal);
 
 for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener(`click`, function () {
-    console.log(`Button clicked`);
+    // console.log(`Button clicked`);
+    modal.classList.remove(`hidden`);
+    // can pass in more with commas
+    // hidden class is now gone
   });
 }
 // this is now an element
