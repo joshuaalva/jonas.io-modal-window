@@ -33,3 +33,14 @@ overlay.addEventListener(`click`, closedModal);
 // this is now an element
 // multiple elements with the same class
 // one line of code doesn't need the curly braces
+
+document.addEventListener('keydown', function (e) {
+  // e for 'event'
+  //   console.log(`a key was pressed.`);
+  console.log(key);
+  if (e.key === 'Escape') {
+    if(!modal.classList.contains(`hiden`){
+        closedModal();
+    })
+  }
+});
