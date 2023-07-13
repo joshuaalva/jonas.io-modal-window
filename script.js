@@ -36,11 +36,11 @@ overlay.addEventListener(`click`, closedModal);
 
 document.addEventListener('keydown', function (e) {
   // e for 'event'
-  //   console.log(`a key was pressed.`);
-  console.log(key);
-  if (e.key === 'Escape') {
-    if(!modal.classList.contains(`hiden`){
-        closedModal();
-    })
+  //   console.log(e.key);
+
+  if (e.key === `Escape` && !modal.classList.contains(`hidden`)) {
+    {
+      closedModal();
+    }
   }
 });
